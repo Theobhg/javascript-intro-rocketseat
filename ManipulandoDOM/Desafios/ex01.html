@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <button id="quad">Quadrado!</button>
+   <div id="squares"></div>
+    
+    <script>
+        var btnElement = document.getElementById('quad')
+        var squaresElement = document.getElementById('squares')
+
+        btnElement.onclick = function() {
+            var squares = document.createElement('div')
+            squares.style.width = '100px'
+            squares.style.height = '100px'
+            squares.style.backgroundColor = 'red'
+
+            squaresElement.appendChild(squares)
+        }
+
+    </script>
+</body>
+</html>
