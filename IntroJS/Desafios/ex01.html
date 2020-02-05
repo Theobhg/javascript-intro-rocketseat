@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // EX 01
+
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "Sao Paulo",
+            uf: "SP"
+          };
+            function retornaEndereco(endereco) {
+            return `O usuario mora em ${endereco.cidade} / ${endereco.uf}, no bairro do ${endereco.bairro}, na ${endereco.rua} no n ${endereco.numero}.`
+
+           
+        };
+
+        var resEndereco = retornaEndereco(endereco);
+        console.log(resEndereco);
+    
+    </script>
+</body>
+</html>
